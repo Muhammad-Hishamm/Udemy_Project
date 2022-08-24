@@ -1,4 +1,3 @@
-/* NAV BAR */
 body
 {
     margin: 0px;
@@ -148,7 +147,7 @@ a{
     border: rgba(0, 0, 0, 0.1) solid 1px;
 }
 .alarm{
-    background-size: 100% 100%;
+    background-size: 90% 100%;
     background-image: url(imges/alarm.png);
     width: 28%;
     height: 50%;
@@ -204,6 +203,13 @@ a{
     padding: 1%;
     position: relative;
 }
+.swiper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+
+}
+
 .courses-container
 {
     display: flex;
@@ -230,9 +236,22 @@ a{
 }
 .course-img {
     width: 100%;
+    
+}
+.fa-star{
+  color: gold;
+}
+.fa-star-half-stroke{
+  color: gold;
+}
+.course-div{
+  width: 100%;
 }
 .one-course {
-    margin: 1%;
+    margin-left: 20px;
+    width: 18%;
+    display: inline-block;
+    
 }
 .one-course:hover{
     background-color: rgba(0, 0, 0, 0.1);
