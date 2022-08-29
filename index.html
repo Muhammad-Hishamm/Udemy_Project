@@ -17,9 +17,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
 
+    <link rel="stylesheet" href="./top-categories.css" />
     <link rel="stylesheet" href="./main.css" />
 
     <link rel="stylesheet" href="./mob.css" />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -115,34 +117,48 @@
         </p>
 
         <div class="courses-btns">
-          <button class="course-btn python">Python</button>
+          <button class="course-btn python" id ="python" onclick = "onpython">Python</button>
 
-          <button class="course-btn excel">Excel</button>
+          <button class="course-btn excel" id ="excel" onclick = "onexcel" >Excel</button>
 
-          <button class="course-btn web">Web development</button>
+          <button class="course-btn web" id="web" onclick = "onweb">Web development</button>
 
-          <button class="course-btn javascript">JavaScript</button>
+          <button class="course-btn javascript" id ="javascript" onclick = "onjavascript">JavaScript</button>
 
-          <button class="course-btn datascince">Data Science</button>
+          <button class="course-btn datascince" id ="datascince" onclick = "ondata">Data Science</button>
 
-          <button class="course-btn aws">AWS Certficate</button>
+          <button class="course-btn aws"        id ="aws"        onclick = "onaws">AWS Certficate</button>
 
-          <button class="course-btn drawing">Drawing</button>
+          <button class="course-btn drawing"    id ="drawing"    onclick = "ondrawing">Drawing</button>
         </div>
       </div>
 
-      <div class="specfic-subject-courses">
-        <h1 class="specfic-subject-courses-header">
-          Expand your career opportunities with Python
-        </h1>
+      <div class="specfic-subject-courses" id="grb" >
+        <h1  id ="headerpython" class="answer_list" >       Expand your career opportunities with Python          </h1>
+        <p id="subjectpython" class="answer_list"> Take one of Udemy’s range of Python courses and learn how to code  using this incredibly useful language. Its simple syntax and   readability makes Python perfect for Flask, Django, data science, and  machine learning. You’ll learn how to build everything from games tosites to apps. Choose from a range of courses that will appeal to....</p>
 
-        <p class="specfic-subject-courses-paragraph">
-          Take one of Udemy’s range of Python courses and learn how to code
-          using this incredibly useful language. Its simple syntax and
-          readability makes Python perfect for Flask, Django, data science, and
-          machine learning. You’ll learn how to build everything from games to
-          sites to apps. Choose from a range of courses that will appeal to....
-        </p>
+          <h1  id ="headerpython"style="display:none;" class="answer_list" >       Expand your career opportunities with Python          </h1>
+          <p id="subjectpython" style="display:none;" class="answer_list"> Take one of Udemy’s range of Python courses and learn how to code  using this incredibly useful language. Its simple syntax and   readability makes Python perfect for Flask, Django, data science, and  machine learning. You’ll learn how to build everything from games tosites to apps. Choose from a range of courses that will appeal to....</p>
+
+          <h1  id ="headerexcel"style="display:none;" class="answer_list" >       Analyze and visualize data with Excel          </h1>
+          <p id="subjectexcel" style="display:none;" class="answer_list">         Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to turn their raw data into actionable insights.</p>
+
+          <h1  id ="headerweb"style="display:none;" class="answer_list" >       Build websites and applications with Web Development          </h1>
+          <p id="subjectweb" style="display:none;" class="answer_list">         The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.          </p>
+          
+          <h1  id ="headerjavascript"style="display:none;" class="answer_list" >       Grow your software development skills with JavaScript    </h1>
+          <p id="subjectjavascript" style="display:none;" class="answer_list">  JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build interactive web applications, choose the best framework, and work with other programming languages like HTML and CSS.</p>
+
+          <h1  id ="headerdata"style="display:none;" class="answer_list" >       Lead data-driven decisions with Data Science         </h1>
+          <p id="subjectdata" style="display:none;" class="answer_list">  Data science application is an in-demand skill in many industries worldwide — including finance, transportation, education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics, and analytics.</p>
+
+          <h1  id ="headeraws"style="display:none;" class="answer_list" >       Become an expert in cloud computing with AWS Certification          </h1>
+          <p id="subjectaws" style="display:none;" class="answer_list"> Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working with a serverless platform, the various frameworks, security and more. With these courses, you’ll build the valuable skills you need to implement cloud initiatives — and open up new career opportunities. If you want to become an AWS developer, we’ve got the course for you.</p>
+
+          <h1  id ="headerdrawing"style="display:none;" class="answer_list" >     Expand your creative skillset with Drawing    </h1>
+          <p id="subjectdrawing" style="display:none;" class="answer_list"> Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration, sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area you’d like to improve with a specialized course. We’ve got tons of options to get — and keep — you going.</p>
+          
+
 
         <button class="explore-btn">Explore More</button>
 
@@ -167,6 +183,110 @@
 
         <div class="courses-container"></div>
       </div>
+    </div>
+
+    <div class="container">
+     
+      <h2 class="mt-5 top-categories">Top Categroies</h2>
+     
+      <div class="container-fluid box-container justify-content-between">
+     
+        <div class="box col-lg-2 col-md-5">
+     
+          <div class="box-img">  
+     
+            <img src="./imges/design.png" alt="design photo" class="img-fluid" />       </div>
+     
+          <div class="box-text">Design</div>
+     
+        </div>
+     
+        <div class="box col-lg-2 col-md-5">
+          
+          <div class="box-img">
+               
+            <img   src="./imges/development.png"  alt="design photo"  class="img-fluid"  />
+          
+          </div>
+          
+          <div class="box-text">Development</div>
+        
+        </div>
+        
+        <div class="box col-lg-2 col-md-5">
+          
+          <div class="box-img">
+          
+            <img    src="./imges/business.png"   alt="design photo" class="img-fluid" />
+          
+          </div>
+          
+          <div class="box-text">Business</div>
+        
+        </div>
+        
+        <div class="box col-lg-2 col-md-5">
+        
+          <div class="box-img">
+        
+            <img    src="./imges/it-software.png" alt="design photo" class="img-fluid"    />
+          
+          </div>
+          
+          <div class="box-text">It software</div>
+        
+        </div>
+        
+        <div class="box col-lg-2 col-md-5">
+        
+          <div class="box-img">
+           
+            <img  src="./imges/marketing.png"  alt="design photo"  class="img-fluid" />
+          
+          </div>
+          
+          <div class="box-text">marketing</div>
+        
+        </div>
+        
+        <div class="box col-lg-2 col-md-5">
+        
+          <div class="box-img">
+           
+            <img    src="./imges/photography.png"  alt="design photo"   class="img-fluid"   />
+          
+          </div>
+          
+          <div class="box-text">Photography</div>
+        
+        </div>
+        
+        <div class="box col-lg-2 col-md-5">
+          
+          <div class="box-img">
+          
+            <img      src="./imges/personal-development.png"    alt="design photo"         class="img-fluid" />
+          
+          </div>
+          
+          <div class="box-text">Personal Development</div>
+        
+        </div>
+       
+        <div class="box col-lg-2 col-md-5">
+       
+          <div class="box-img">
+       
+            <img src="./imges/music.png" alt="design photo" class="img-fluid" />
+       
+          </div>
+       
+          <div class="box-text">Music</div>
+       
+       </div>
+      
+      </div>
+   
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="javs.js"></script>
